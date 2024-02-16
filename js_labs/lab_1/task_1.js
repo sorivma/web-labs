@@ -1,3 +1,10 @@
+const readline = require('readline')
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
 function ageToString(age){
     if (age <= 0) {
         return "Таких людей не бывает"
@@ -17,12 +24,11 @@ function ageToString(age){
     return "пожилой"
 }
 
+rl.question('', (age) => {
+    console.log(ageToString(parseInt(age)))
+    rl.close();
+})
 
 
-test_data = [20, 1, 100,]
-
-test_data.forEach(element => {
-    console.log(ageToString(element))
-});
 
 

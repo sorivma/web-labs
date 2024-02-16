@@ -12,4 +12,4 @@ function isLeapYear(year) {
 rl.question('', (year) => {
     console.log(isLeapYear(parseInt(year)) ? "yes" : "no")
     rl.close();
-})2
+})

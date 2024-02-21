@@ -1,0 +1,43 @@
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 10px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(240, 240, 240);
+}
+
+tr:hover {
+    background-color: black;
+    color: white;
+}
+
+tr:hover td {
+    border-color: black;
+}
+
+tr:hover th {
+    border-color: black;
+    background-color: black;
+}
+
+table {
+    margin-top: 10%;
+    margin-left: 5%;
+}
+
+th {
+    background-color: rgb(222, 222,222);
+    width: 200px;
+}
+
+table,
+td,
+th {
+    text-align: left;
+    border-collapse: collapse;
+    border-radius: 1px;
+    border-style: solid;
+    border-color: rgb(222, 222, 222);
+}
+

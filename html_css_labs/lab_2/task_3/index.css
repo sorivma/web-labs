@@ -1,13 +1,14 @@
 body {
     font-family: Helvetica, sans-serif;
-    font-size: 10px;
+    font-size: 20px;
 }
+
 
 tr:nth-child(odd) {
     background-color: rgb(240, 240, 240);
 }
 
-tr:hover {
+tr:hover td{
     background-color: black;
     color: white;
 }
@@ -17,18 +18,16 @@ tr:hover td {
 }
 
 tr:hover th {
-    border-color: black;
-    background-color: black;
+    color: black;
 }
 
 table {
-    margin-top: 10%;
-    margin-left: 5%;
+    margin: 10%;
+    width: 80%;
 }
 
 th {
     background-color: rgb(222, 222,222);
-    width: 200px;
 }
 
 table,

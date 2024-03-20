@@ -1,0 +1,19 @@
+section {
+    border: 2px dotted rgb(9, 177, 9);
+    margin: auto;
+    width: 200px;
+    height: 250px;
+}
+
+section h1 {
+    text-align: center;
+}
+
+section p {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid blue;
+    box-sizing: border-box;
+    text-align: center;
+}
+

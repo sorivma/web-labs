@@ -1,0 +1,14 @@
+.box {
+    background-color: rgb(65, 223, 207);
+    border-radius: 10px;
+    border: 5px solid #000;
+    max-width: 40%;
+    padding: 2%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.box p {
+    width: 200px;
+    margin: auto;
+}

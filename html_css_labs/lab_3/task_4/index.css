@@ -1,0 +1,35 @@
+body {
+    margin: 3%;
+    padding: 0;
+}
+
+header {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid black;
+}
+
+.menu-options {
+    display: inline-block;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.menu-options ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-options li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.menu-options a {
+    text-decoration: none;
+    color: rgb(113, 158, 46);
+    font-weight: bold;
+}

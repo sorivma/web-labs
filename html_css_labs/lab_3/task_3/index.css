@@ -1,0 +1,13 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(237, 237, 237);
+    color: rgb(50, 50, 50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    margin: 0 auto;
+    width: 70%;
+}

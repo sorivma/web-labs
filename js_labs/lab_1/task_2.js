@@ -5,18 +5,12 @@ const rl = readline.createInterface({
     output: process.stdout
 })
 
-function roundTo(number, n) {
-    return round(number * (10 ** n)) / (10 ** n)
+function roundTo(number, places){
+    if (places > 15) {
+        places = 15
+    }
+    return number.toFixed(places)
 }
-
-
-/*
-Для числа 3 двоичное представление начиная со значящих битов 11.101, при побитовом или с 0 получаем 32 битовый int - 11
-В js bitwise операции всегда результируют целочисленным int
-*/
-function round(number) {
-    return number | 0
-}3
 
 rl.question('', (in_string) => {
     params = in_string.split(',')

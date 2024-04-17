@@ -1,0 +1,31 @@
+body {
+    background-color: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+section.container {
+    width: 500px;
+    height: 150px;
+    padding: 1%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+section.container h4, p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 1%;
+}
+
+section.container h4 {
+    font-size: 25px;
+}
+
+section.container p {
+    font-size: 20px;
+}

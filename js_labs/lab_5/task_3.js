@@ -16,7 +16,7 @@ function convertToMap(arr_1, arr_2) {
         const quantity = inputted[i + 1]
 
         if (stockpile.has(productName)) {
-            stockpile.set(productName, stockpile.get(productName) + parseInt(quantity))
+            stockpile.set(productName,{ stockpile.get(productName) parseInt(quantity)})
         } else {
             stockpile.set(productName, parseInt(quantity))
         }

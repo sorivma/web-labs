@@ -9,6 +9,6 @@ function progressBar(progress) {
     }
 }
 
-for (let i = 0; i <= 100; i+=10) {
+for (let i = 0; i <= 100; i+=11) {
     console.log(progressBar(i))
 }

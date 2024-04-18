@@ -22,10 +22,12 @@ function min(first_two, last) {
     return min
 }
 
-rl.question('', (in_string) => {
-    args = in_string.split(',')
-    last = parseInt(args.pop())
-    first_two = args.map(str => parseInt(str))
-    console.log(min(first_two, last))
-    rl.close();
-})
+// rl.question('', (in_string) => {
+//     args = in_string.split(',')
+//     last = parseInt(args.pop())
+//     first_two = args.map(str => parseInt(str))
+//     console.log(min(first_two, last))
+//     rl.close();
+// })
+
+console.log(min(1, [1,2]))

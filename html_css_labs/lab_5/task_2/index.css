@@ -1,0 +1,116 @@
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+.user-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    margin: 3% 0% 5% 0%;
+}
+
+form {
+    position: relative;
+    background-color: rgb(248, 248, 248);
+    border-radius: 5px;
+    padding: 30px;
+    border: 1px solid rgb(92, 92, 92);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-box input {
+    padding-left: 30px;
+    height: 25px;
+    border: 1px solid rgb(195, 195, 195);
+    border-radius: 3px;
+    box-sizing: border-box;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+
+input.input-username {
+    background-image: url('person.svg');
+}
+
+input.input-password {
+    background-image: url('key.svg');
+}
+
+label {
+    font-weight: bold;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+
+button {
+    background-color: black;
+    border-style: solid;
+    color: white;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+h4 {
+    top: -20px;
+    left: -0.7px;
+    position: absolute;
+    padding: 10px;
+    background-color: rgb(248, 248, 248);
+    border-radius: 2px;
+    border: 1px solid rgb(92, 92, 92);
+    width: 150px;
+    height: auto;
+    font-weight: normal;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Helvetica, sans-serif;
+    margin: 0%;
+}
+
+/*phone and tablet*/
+@media screen and (max-width: 991px) {
+    body {
+        margin-top: 10%
+    }
+    .user-box label {
+        width: 100%;
+    }
+    .user-box input {
+        width: 100%;
+    }
+    form {
+        min-width: 50%;
+    }
+    user-box {
+        margin-bottom: 7%;
+    }
+    h4 {
+        width: 100px;
+    }
+}
+
+/*laptop and desktop*/
+@media screen and (min-width: 992px) {
+    body { margin-top: 5%; }
+    form {
+        width: 35%;
+    }
+    .user-box label {
+        width: 25%;
+    }
+    .user-box input {
+        width: 75%;;
+    }
+}
+
+/*width for desktop*/
+@media screen and (min-width: 1200px) {
+    form {
+        width: 30%;
+    }
+}

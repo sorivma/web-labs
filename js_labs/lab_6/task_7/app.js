@@ -6,19 +6,29 @@ function attachListeners() {
         const showDetailsButton = profile.querySelector('button')
         const hiddenFields = profile.querySelector(`#user${counter}HiddenFields`)
 
-        showDetailsButton.addEventListener('click', function() {
-            let lock
+        showDetailsButton.addEventListener('click', function () {
+            let lock = "lock"
+
+
             radios.forEach(radio => {
                 if (radio.checked) {
                     lock = radio.value
                 }
             })
-            
-            if (lock === 'unlock') {
-                hiddenFields.style.display = (hiddenFields.style.display === 'none') ? 'block' : 'none'
+
+            console.log(lock)
+
+            if (lock == 'unlock') {
+                if (hiddenFields.style.display === "none") {
+                    hiddenFields.style.display = "block"; // Reset to default value
+                } else if (hiddenFields.style.display === "block") {
+                    hiddenFields.style.display = "none";
+                } else {
+                    hiddenFields.style.display = "block"
+                }
             }
         })
-    counter++
+        counter++
     });
 }
 
